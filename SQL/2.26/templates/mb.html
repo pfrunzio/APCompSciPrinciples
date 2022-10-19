@@ -1,0 +1,50 @@
+<!--finish polishing layout-->
+
+{% extends "layout.html" %}
+
+{% block body %}
+<div class = "padding shadow">
+<div class = "container" style="width:100%">
+    <h1 style="text-align:center">{{name}} Merit Badge</h1>
+    <ul style="text-align:center">{{em}}</ul>
+    </br>
+    <img src = "/static/photos/{{photoid}}" alt = "{{name}} MB" class="center">
+</div>
+</div>
+
+</br></br>
+
+<div class = "padding shadow">
+    This badge has been started: {{started}} </br></br>
+    This badge was started on: {{startdate}} </br></br>
+    This badge has been completed: {{completed}} </br></br>
+    This badge was completed on: {{completiondate}}
+
+
+    <!--<div class="container" style="width:50%">-->
+    <!--    Percent Done-->
+    <!--    <div class="round grey">-->
+    <!--        <div class="round color" style="width:{{percentdone}}%">{{percentdone}}%</div>-->
+    <!--    </div>-->
+    <!--</div>-->
+
+</br>
+</div>
+
+</br></br>
+
+<form action="/edit" method="post">
+    <button type="submit" class="button" name="name" value="{{name}}">Edit</button>
+</form>
+<form action="/checkdelete" method="post">
+    <button type="submit" class="button" name="name" value="{{name}}">Delete</button>
+</form>
+
+</br>
+
+<!--back button-->
+<form action="/display" method="post">
+    <button type="submit" class="button">Back</button></br>
+</form>
+
+{% endblock %}

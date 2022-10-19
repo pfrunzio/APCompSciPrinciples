@@ -1,0 +1,44 @@
+<!--this page is done-->
+
+{% extends "layout.html" %}
+
+{% block body %}
+<!--comes from add.html or edit.html-->
+
+<h2>This is the info you {{actioning}}.</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Started</th>
+        <th>Start Date</th>
+        <th>Completed</th>
+        <th>Completion Date</th>
+        <th>Counselor</th>
+        <th>Complete Requirements</th>
+    </tr>
+    <tr>
+        {% for item in mb %}
+        <td>{{item}}</td>
+        {% endfor %}
+    </tr>
+</table>
+
+</br></br></br>
+
+<!--proceed with adding or editing-->
+<form action="/{{nextaction}}" method="post">
+    <button type="submit" class="button" name="mb" value="{{mb}}">Submit</button></br>
+</form>
+
+<!--back to add.html or edit.html button-->
+<form action="/{{pastaction}}" method="post">
+    <button type="submit" class="button">Back to Form</button></br>
+</form>
+
+<!--back to display button-->
+<form action="/display" method="post">
+    <button type="submit" class="button">Back to Display</button></br>
+</form>
+
+{% endblock %}

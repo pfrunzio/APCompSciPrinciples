@@ -1,0 +1,29 @@
+<!--this page is done-->
+
+{% extends "layout.html" %}
+
+{% block body %}
+
+</br>
+
+<h2>Merit Badges</h2>
+<h3>Click on a Badge to Display the Specifics</h3></br></br>
+
+
+{% for badge in badges %}
+    <form action="/mb" method="post">
+    <button type="submit" class="mbbutton" name="name" style="width:25%" value="{{badge}}">
+    {{badge}}
+    </button>
+    </form>
+{% endfor %}
+
+</br></br></br>
+
+
+<form action="/add" method="post">
+    <button type="submit" class="button">Add</button>
+</form>
+
+
+{% endblock %}

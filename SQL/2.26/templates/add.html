@@ -1,0 +1,51 @@
+<!--this page is done-->
+
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h2>Enter a New Badge into the Database</h2>
+
+<!--goes to denial.html if it's a duplicate badge, check.html otherwise-->
+<form action="/checkadd" method="post">
+    What is the name of this badge? </br>
+    <input type="text" name="name">
+    </br></br>
+    Have you started this badge? </br>
+    <select name="started">
+        <option value="True">Yes</option>
+        <option value="False">No</option>
+    </select>
+    </br></br>
+    If so when did you start this badge? </br>
+    <input type="date" name="startdate">
+    </br></br>
+    Have you finished this badge? </br>
+    <select name="completed">
+        <option value="True">Yes</option>
+        <option value="False">No</option>
+    </select>
+    </br></br>
+    If so when did you finish this badge? </br>
+    <input type="date" name="completiondate">
+    </br></br>
+    Who was your counselor or where did you do this badge? </br>
+    <input type="text" name="counselor">
+    </br></br>
+    How many requirements have you completed? </br>
+    <input type="number" name="completereqs">
+    </br></br>
+    </br></br>
+    <input type="submit" class="formbutton"></br>
+</form>
+
+</br></br>
+
+<img src = "/static/photos/mb.png" alt = "Pile of Merit Badges"></br>
+
+<!--back button-->
+<form action="/display" method="post">
+    <button type="submit" class="button">Back</button></br>
+</form>
+
+{% endblock %}
