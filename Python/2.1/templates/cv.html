@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your CV</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <style>
+            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+            .body {
+                color:#0000;
+                background-color:#f1f1f1;
+            }
+            .color {
+                color: white;
+                background-color: {{themeColor}};
+            }
+            .text-color {
+                color: {{themeColor}};
+            }
+        </style>
+    </head>
+    <body class="body">
+        <!-- Page Container -->
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+          <!-- The Grid -->
+          <div class="w3-row-padding">
+
+            <!-- Left Column -->
+            <div class="w3-third">
+
+              <div class="w3-white w3-text-grey w3-card-4">
+                <div class="w3-container">
+                  <h2>{{name}}</h2>
+                  <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large text-color"></i>{{occupation}}</p>
+                  <p><i class="fa fa-home fa-fw w3-margin-right w3-large text-color"></i>{{location}}</p>
+                  <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large text-color"></i>{{email}}</p>
+                  <p><i class="fa fa-phone fa-fw w3-margin-right w3-large text-color"></i>{{phonenumber}}</p>
+                  <hr>
+
+                  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right text-color"></i>Skills</b></p>
+                  <p>{{skill1}}</p>
+                  <div class="w3-light-grey w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge color" style="width:{{pskill1}}%">{{pskill1}}%</div>
+                  </div>
+                  <p>{{skill2}}</p>
+                  <div class="w3-light-grey w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge color" style="width:{{pskill2}}%">
+                    <div class="w3-center w3-text-white">{{pskill2}}%</div>
+                    </div>
+                  </div>
+                  <p>{{skill3}}</p>
+                  <div class="w3-light-grey w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge color" style="width:{{pskill3}}%">{{pskill3}}%</div>
+                  </div>
+                  <br>
+
+                  <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right text-color"></i>Languages</b></p>
+                  <p>{{language1}}</p>
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-round-xlarge color" style="height:24px;width:{{planguage1}}%"></div>
+                  </div>
+                  <p>{{language2}}</p>
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-round-xlarge color" style="height:24px;width:{{planguage2}}%"></div>
+                  </div>
+                  <p>{{language3}}</p>
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-round-xlarge color" style="height:24px;width:{{planguage3}}%"></div>
+                  </div>
+                  <br>
+                </div>
+              </div><br>
+
+            <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+
+              <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge text-color"></i>Work Experience</h2>
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b>{{work1}}</b></h5>
+                  <h6 class="text-color"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{swork1}} - <span class="w3-tag color w3-round">Current</span></h6>
+                  <p>{{dwork1}}</p>
+                  <hr>
+                </div>
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b>{{work2}}</b></h5>
+                  <h6 class="text-color"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{swork2}} - {{ework2}}</h6>
+                  <p>{{dwork2}}</p>
+                  <hr>
+                </div>
+              </div>
+
+              <div class="w3-container w3-card w3-white">
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge text-color"></i>Education</h2>
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b>{{edu1}}</b></h5>
+                  <h6 class="text-color"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{sedu1}} - {{eedu1}}</h6>
+                  <p>{{dedu1}}</p>
+                  <hr>
+                </div>
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b>{{edu2}}</b></h5>
+                  <h6 class="text-color"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{sedu2}} - {{eedu2}}</h6>
+                  <p>{{dedu2}}</p><br>
+                </div>
+              </div>
+
+            <!-- End Right Column -->
+            </div>
+
+          <!-- End Grid -->
+          </div>
+
+          <!-- End Page Container -->
+        </div>
+        <footer class="w3-container color w3-center w3-margin-top">
+          <h2>Citations</h2>
+          <p>Template source by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+          <p>Customization by Paola Frunzio</p>
+        </footer>
+    </body>
+</html>

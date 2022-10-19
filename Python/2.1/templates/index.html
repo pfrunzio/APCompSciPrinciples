@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input Page</title>
+        <style>
+            h1, p {
+                color: white;
+            }
+            body {
+                background-color: #294681;
+            }
+            html {
+                margin-left: 25px;
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Input Information For Your CV</h1>
+        <form action="/output" method="post">
+            <p>
+            What is your name? (first and last) </br><input type="text" name="name"></br>
+            What is your occupation? </br><input type="text" name="occupation"></br>
+            Where are you located? (city, country) </br><input type="text" name="location"></br>
+            What is your email? </br><input type="text" name="email"></br>
+            What is your phone number? </br><input type="text" name="phonenumber"></br>
+            </br></br>
+            Enter a skill you have: </br><input type="text" name="skill1"></br>
+            How proficient are you in this skill? </br><input type="text" name="pskill1">%</br>
+            Enter a second skill you have: </br><input type="text" name="skill2"></br>
+            How proficient are you in this skill? </br><input type="text" name="pskill2">%</br>
+            Enter a third skill you have: </br><input type="text" name="skill3"></br>
+            How proficient are you in this skill? </br><input type="text" name="pskill3">%</br>
+            </br></br>
+            Enter a language you know: </br><input type="text" name="language1"></br>
+            How proficient are you in this language? </br><input type="text" name="planguage1">%</br>
+            Enter another language you know: </br><input type="text" name="language2"></br>
+            How proficient are you in this language? </br><input type="text" name="planguage2">%</br>
+            Enter another language you know: </br><input type="text" name="language3"></br>
+            How proficient are you in this language? </br><input type="text" name="planguage3">%</br>
+            </br></br>
+            Where do you currently work? </br><input type="text" name="work1"></br>
+            Write a short description of it: </br><textarea type="text" name="dwork1"></textarea></br>
+            When did you start? </br><input type="text" name="swork1"></br>
+            What's a work experience you've had? </br><input type="text" name="work2"></br>
+            Write a short description of it: </br><textarea type="text" name="dwork2"></textarea></br>
+            When did you start? </br><input type="text" name="swork2"></br>
+            When did you end? </br><input type="text" name="ework2"></br>
+            </br></br>
+            What is one education credential you have? </br><input type="text" name="edu1"></br>
+            Write a short description of it: </br><textarea type="text" name="dedu1"></textarea></br>
+            When did it start? </br><input type="text" name="sedu1"></br>
+            When did it end? </br><input type="text" name="eedu1"></br>
+            What is another education credential you have? </br><input type="text" name="edu2"></br>
+            Write a short description of it: </br><textarea type="text" name="dedu2"></textarea></br>
+            When did it start? </br><input type="text" name="sedu2"></br>
+            When did it end? </br><input type="text" name="eedu2"></br>
+            </br></br>
+            What color should the theme be? </br>
+            <input type="radio" name="themeColor" value="#d2250e" />Red<br/>
+            <input type="radio" name="themeColor" value="#d2840e" />Orange<br/>
+            <input type="radio" name="themeColor" value="#d2be0e" />Yellow<br/>
+            <input type="radio" name="themeColor" value="#22d20e" />Green<br/>
+            <input type="radio" name="themeColor" value="#0e8dd2" />Blue<br/>
+            <input type="radio" name="themeColor" value="#840ed2" />Violet<br/>
+            or enter a hex code (please include #)</br>
+            <input type="text" name="themeColor"></br>
+            </br></br>
+            <input type="submit">
+            </p>
+        </form>
+    </body>
+</html>

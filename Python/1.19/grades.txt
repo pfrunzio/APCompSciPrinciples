@@ -1,0 +1,12 @@
+Student 1
+90
+85
+96
+Student 2
+76
+69
+88
+Student 3
+43
+53
+33

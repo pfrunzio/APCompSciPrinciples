@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1>Results Page</h1>
+
+<h2>Hello {{name}}!</h2></br></br>
+
+<div class="white shadow padding" style="width:33%"><div class="container">
+    Your personality type is a {{result}}!
+    </br></br>
+    <div class="container">
+    <img src="/static/{{image}}" style="width:100%">
+</div></div></div>
+</br></br>
+
+This means: </br>
+{{meaning}} </br></br></br></br></br></br></br>
+
+<div class="white shadow padding" style="width:33%"><div class="container">
+    Your Full Results:</br></br>
+
+    <p>Waffle</p>
+    <div class="light-grey round-xlarge small">
+    <div class="container center round-xlarge color" style="{{pwaffle}}%">{{pwaffle}}%</div>
+    </div>
+    <br>
+    <p>Pancake</p>
+    <div class="light-grey round-xlarge small">
+    <div class="container center round-xlarge color" style="width:{{ppancake}}%">{{ppancake}}%</div>
+    </div>
+    <br>
+    <p>French Toast</p>
+    <div class="light-grey round-xlarge small">
+    <div class="container center round-xlarge color" style="width:{{pfrenchtoast}}%">{{pfrenchtoast}}%</div>
+    </div>
+    <br>
+    <p>Scrambled Egg</p>
+    <div class="light-grey round-xlarge small">
+    <div class="container center round-xlarge color" style="width:{{pegg}}%">{{pegg}}%</div>
+    </div>
+    <br>
+</div></div>
+
+</br></br></br></br></br></br></br></br></br></br>
+
+P.S. If you think the results are wrong they are not. You're just in denial.
+
+{% endblock %}

@@ -1,0 +1,60 @@
+
+{% extends "layout.html" %}
+
+{% block body %}
+<form action="/results" method="post">
+    <div class="container">
+    <h2>Questions</h2></br>
+    Enter your name: <input type="text" name="name">
+    </br></br></br>
+    <div class="white shadow padding half"><div class="container">
+    On a scale of 1 to 5 how messy is your room? (5 being the messiest)
+    <select name="room">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    </div></div>
+    </br></br>
+    <div class="white shadow padding half"><div class="container">
+    What's your favorite color? </br>
+    <input type="radio" name="color" value="yellow" />Yellow<br/>
+    <input type="radio" name="color" value="green" />Green<br/>
+    <input type="radio" name="color" value="blue" />Blue<br/>
+    <input type="radio" name="color" value="red" />Red<br/>
+    </div></div>
+    </br></br>
+    <div class="white shadow padding half"><div class="container">
+    You would be most hurt is someone called you ___. </br>
+    <input type="radio" name="insult" value="weak" />Weak<br/>
+    <input type="radio" name="insult" value="ignorant" />Ignorant<br/>
+    <input type="radio" name="insult" value="unkind" />Unkind<br/>
+    <input type="radio" name="insult" value="boring" />Boring<br/>
+    </div></div>
+    </br></br>
+    <div class="white shadow padding half"><div class="container">
+    What class do you play in terraria? </br>
+    <input type="radio" name="class" value="melee" />Melee<br/>
+    <input type="radio" name="class" value="ranged" />Ranged<br/>
+    <input type="radio" name="class" value="mage" />Mage<br/>
+    <input type="radio" name="class" value="summoner" />Summoner<br/>
+    </div></div>
+    </br></br>
+    <div class="white shadow padding half"><div class="container">
+    What skills are you good at? </br>
+    <input type="checkbox" name="skill" value="braid" />Braiding Hair<br/>
+    <input type="checkbox" name="skill" value="fish" />Fishing in Minecraft<br/>
+    <input type="checkbox" name="skill" value="type" />Typing<br/>
+    <input type="checkbox" name="skill" value="plug" />Plugging in the USB on the first try<br/>
+    </div></div>
+    </br></br>
+
+    </br>
+    <input type="submit">
+    </br></br>
+    </div>
+</form>
+
+{% endblock %}
