@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='stylesheet.css' rel='stylesheet' type='text/css'>
+        <title>HTML Project - Quiz</title>
+    </head>
+    <body>
+        <!--nav tab-->
+        <ul style="
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #294681;
+        top: 0;
+        left: 0;
+        width: 100%;">
+            <li style="float: left;"><a href="index.html">Home</a></li>
+            <li class="dropdown" style="float: left;">
+                <a href="#hobbies" class="dropbtn">Hobbies</a>
+                <div class="dropdown-content">
+                  <a href="scouts.html">Scouts</a>
+                  <a href="athletics.html">Athletics</a>
+                  <a href="entertainment.html">Entertainment</a>
+                </div>
+            <li style="float: left;"><a href="quiz.html">Quiz</a></li>
+        </ul>
+
+        <h1>Quiz</h1>
+
+        <form>
+            Your Name<br/>
+            <input type="text" name="name" /><br/><br/>
+
+            Password<br/>
+            <input type="password" name="password" /><br/><br/>
+
+            What is my favorite color?<br/>
+            <input type="radio" name="favColor" value="red" />Red<br/>
+            <input type="radio" name="favColor" value="orange" />Orange<br/>
+            <input type="radio" name="favColor" value="yellow" />Yellow<br/>
+            <input type="radio" name="favColor" value="green" />Green<br/>
+            <input type="radio" name="favColor" value="blue" />Blue<br/>
+            <input type="radio" name="favColor" value="violet" />Violet<br/>
+            <br/>
+
+            What classes am I taking this year?<br/>
+            <input type="checkbox" name="classes" value="english" />English<br/>
+            <input type="checkbox" name="classes" value="math" />Math<br/>
+            <input type="checkbox" name="classes" value="physics" />Physics<br/>
+            <input type="checkbox" name="classes" value="chemistry" />Chemistry<br/>
+            <input type="checkbox" name="classes" value="history" />History<br/>
+            <input type="checkbox"  name="classes" value="french" />French<br/>
+            <input type="checkbox"  name="classes" value="art" />Art<br/>
+            <input type="checkbox"  name="classes" value="computer science" />Computer Science<br/><br/>
+
+            Which state haven't I been to?<br/>
+            <select name="country">
+            	<option value="CA"> CA
+            	<option value="NH"> NH
+            	<option value="VA"> VA
+            	<option value="WA"> WA
+            	<option value="AK"> AK
+            </select><br/><br/>
+
+            <input type="submit" name="submit" value="SUBMIT"/>
+            <input type="reset" name="reset" value="RESET" />
+        </form>
+
+    </body>
+</html>
